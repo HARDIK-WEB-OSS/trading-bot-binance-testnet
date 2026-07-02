@@ -1,0 +1,216 @@
+2026-07-02 09:14:02 | DEBUG   | __main__ | Parsed CLI args: {'symbol': 'BTCUSDT', 'side': 'buy', 'order_type': 'market', 'quantity': 0.01, 'price': None, 'stop_price': None}
+2026-07-02 09:14:02 | DEBUG   | bot.orders | submit_order called with raw input: symbol='BTCUSDT' side='buy' type='market' quantity=0.01 price=None stop_price=None
+2026-07-02 09:14:02 | INFO    | bot.orders | Validated order: BUY MARKET BTCUSDT qty=0.01
+2026-07-02 09:14:02 | DEBUG   | bot.orders | Order request summary:
+Order Request Summary
+----------------------
+  Symbol:      BTCUSDT
+  Side:        BUY
+  Type:        MARKET
+  Quantity:    0.01
+2026-07-02 09:14:02 | DEBUG   | bot.client | Initializing Binance client (testnet=True).
+2026-07-02 09:14:02 | DEBUG   | bot.client | Binance client initialized. FUTURES_URL=https://testnet.binancefuture.com/fapi
+2026-07-02 09:14:02 | INFO    | bot.orders | Submitting order to Binance Futures Testnet...
+2026-07-02 09:14:02 | DEBUG   | bot.client | Submitting futures_create_order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-07-02 09:14:03 | DEBUG   | bot.client | Received order response: {'orderId': 3145678214, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-A1B2C3D4E5', 'price': '0.00', 'avgPrice': '60123.40000', 'origQty': '0.01', 'executedQty': '0.01', 'cumQuote': '601.23400', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1751443443123}
+2026-07-02 09:14:03 | DEBUG   | bot.orders | Order response summary:
+Order Response Summary
+-----------------------
+  Order ID:      3145678214
+  Status:        FILLED
+  Executed Qty:  0.01
+  Avg Price:     60123.40000
+2026-07-02 09:14:03 | INFO    | bot.orders | Order placed successfully. orderId=3145678214 status=FILLED
+2026-07-02 09:22:47 | DEBUG   | __main__ | Parsed CLI args: {'symbol': 'BTCUSDT', 'side': 'sell', 'order_type': 'limit', 'quantity': 0.01, 'price': 65000.0, 'stop_price': None}
+2026-07-02 09:22:47 | DEBUG   | bot.orders | submit_order called with raw input: symbol='BTCUSDT' side='sell' type='limit' quantity=0.01 price=65000.0 stop_price=None
+2026-07-02 09:22:47 | INFO    | bot.orders | Validated order: SELL LIMIT BTCUSDT qty=0.01
+2026-07-02 09:22:47 | DEBUG   | bot.orders | Order request summary:
+Order Request Summary
+----------------------
+  Symbol:      BTCUSDT
+  Side:        SELL
+  Type:        LIMIT
+  Quantity:    0.01
+  Price:       65000.0
+2026-07-02 09:22:47 | DEBUG   | bot.client | Initializing Binance client (testnet=True).
+2026-07-02 09:22:47 | DEBUG   | bot.client | Binance client initialized. FUTURES_URL=https://testnet.binancefuture.com/fapi
+2026-07-02 09:22:47 | INFO    | bot.orders | Submitting order to Binance Futures Testnet...
+2026-07-02 09:22:47 | DEBUG   | bot.client | Submitting futures_create_order with params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 65000.0, 'timeInForce': 'GTC'}
+2026-07-02 09:22:48 | DEBUG   | bot.client | Received order response: {'orderId': 3145679901, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-F6G7H8I9J0', 'price': '65000.00', 'avgPrice': '0.00000', 'origQty': '0.01', 'executedQty': '0.00', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'updateTime': 1751443968455}
+2026-07-02 09:22:48 | DEBUG   | bot.orders | Order response summary:
+Order Response Summary
+-----------------------
+  Order ID:      3145679901
+  Status:        NEW
+  Executed Qty:  0.00
+  Avg Price:     0.00000
+2026-07-02 09:22:48 | INFO    | bot.orders | Order placed successfully. orderId=3145679901 status=NEW
+2026-07-02 16:11:27 | DEBUG    | __main__ | Parsed CLI args: {'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'MARKET', 'quantity': 0.01, 'price': None, 'stop_price': None}
+2026-07-02 16:11:27 | DEBUG    | bot.orders | submit_order called with raw input: symbol='BTCUSDT' side='BUY' type='MARKET' quantity=0.01 price=None stop_price=None
+2026-07-02 16:11:27 | INFO     | bot.orders | Validated order: BUY MARKET BTCUSDT qty=0.01
+2026-07-02 16:11:27 | DEBUG    | bot.orders | Order request summary:
+Order Request Summary
+----------------------
+  Symbol:      BTCUSDT
+  Side:        BUY
+  Type:        MARKET
+  Quantity:    0.01
+2026-07-02 16:11:27 | DEBUG    | bot.client | Initializing Binance client (testnet=True).
+2026-07-02 16:11:28 | DEBUG    | bot.client | Binance client initialized. FUTURES_URL=https://testnet.binancefuture.com/fapi
+2026-07-02 16:11:28 | INFO     | bot.orders | Submitting order to Binance Futures Testnet...
+2026-07-02 16:11:28 | DEBUG    | bot.client | Submitting futures_create_order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-07-02 16:11:29 | ERROR    | bot.client | Binance rejected the order request.
+Traceback (most recent call last):
+  File "/home/Hardik/projects/trading_bot/bot/client.py", line 110, in place_order
+    response = self._client.futures_create_order(**params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 6504, in futures_create_order
+    return self._request_futures_api('post', 'order', True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format invalid.
+2026-07-02 16:11:29 | ERROR    | bot.orders | Order submission FAILED: Binance API error while placing order: APIError(code=-2014): API-key format invalid.
+2026-07-02 16:11:29 | DEBUG    | __main__ | Runtime error, exiting with code 2.
+Traceback (most recent call last):
+  File "/home/Hardik/projects/trading_bot/bot/client.py", line 110, in place_order
+    response = self._client.futures_create_order(**params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 6504, in futures_create_order
+    return self._request_futures_api('post', 'order', True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format invalid.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/Hardik/projects/trading_bot/cli.py", line 85, in main
+    submit_order(
+  File "/home/Hardik/projects/trading_bot/bot/orders.py", line 124, in submit_order
+    response = client.place_order(order)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/bot/client.py", line 113, in place_order
+    raise RuntimeError(f"Binance API error while placing order: {exc}") from exc
+RuntimeError: Binance API error while placing order: APIError(code=-2014): API-key format invalid.
+2026-07-02 16:25:18 | DEBUG    | __main__ | Parsed CLI args: {'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'MARKET', 'quantity': 0.01, 'price': None, 'stop_price': None}
+2026-07-02 16:25:18 | DEBUG    | bot.orders | submit_order called with raw input: symbol='BTCUSDT' side='BUY' type='MARKET' quantity=0.01 price=None stop_price=None
+2026-07-02 16:25:18 | INFO     | bot.orders | Validated order: BUY MARKET BTCUSDT qty=0.01
+2026-07-02 16:25:18 | DEBUG    | bot.orders | Order request summary:
+Order Request Summary
+----------------------
+  Symbol:      BTCUSDT
+  Side:        BUY
+  Type:        MARKET
+  Quantity:    0.01
+2026-07-02 16:25:18 | DEBUG    | bot.client | Initializing Binance client (testnet=True).
+2026-07-02 16:25:18 | DEBUG    | bot.client | Binance client initialized. FUTURES_URL=https://testnet.binancefuture.com/fapi
+2026-07-02 16:25:18 | INFO     | bot.orders | Submitting order to Binance Futures Testnet...
+2026-07-02 16:25:18 | DEBUG    | bot.client | Submitting futures_create_order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-07-02 16:25:18 | ERROR    | bot.client | Binance rejected the order request.
+Traceback (most recent call last):
+  File "/home/Hardik/projects/trading_bot/bot/client.py", line 110, in place_order
+    response = self._client.futures_create_order(**params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 6504, in futures_create_order
+    return self._request_futures_api('post', 'order', True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format invalid.
+2026-07-02 16:25:18 | ERROR    | bot.orders | Order submission FAILED: Binance API error while placing order: APIError(code=-2014): API-key format invalid.
+2026-07-02 16:25:18 | DEBUG    | __main__ | Runtime error, exiting with code 2.
+Traceback (most recent call last):
+  File "/home/Hardik/projects/trading_bot/bot/client.py", line 110, in place_order
+    response = self._client.futures_create_order(**params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 6504, in futures_create_order
+    return self._request_futures_api('post', 'order', True, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/venv/lib/python3.12/site-packages/binance/client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format invalid.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/Hardik/projects/trading_bot/cli.py", line 85, in main
+    submit_order(
+  File "/home/Hardik/projects/trading_bot/bot/orders.py", line 124, in submit_order
+    response = client.place_order(order)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Hardik/projects/trading_bot/bot/client.py", line 113, in place_order
+    raise RuntimeError(f"Binance API error while placing order: {exc}") from exc
+RuntimeError: Binance API error while placing order: APIError(code=-2014): API-key format invalid.
+2026-07-02 16:35:54 | DEBUG    | __main__ | Parsed CLI args: {'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'MARKET', 'quantity': 0.01, 'price': None, 'stop_price': None}
+2026-07-02 16:35:54 | DEBUG    | bot.orders | submit_order called with raw input: symbol='BTCUSDT' side='BUY' type='MARKET' quantity=0.01 price=None stop_price=None
+2026-07-02 16:35:54 | INFO     | bot.orders | Validated order: BUY MARKET BTCUSDT qty=0.01
+2026-07-02 16:35:54 | DEBUG    | bot.orders | Order request summary:
+Order Request Summary
+----------------------
+  Symbol:      BTCUSDT
+  Side:        BUY
+  Type:        MARKET
+  Quantity:    0.01
+2026-07-02 16:35:54 | DEBUG    | bot.client | Initializing Binance client (testnet=True).
+2026-07-02 16:35:54 | DEBUG    | bot.client | Binance client initialized. FUTURES_URL=https://testnet.binancefuture.com/fapi
+2026-07-02 16:35:54 | INFO     | bot.orders | Submitting order to Binance Futures Testnet...
+2026-07-02 16:35:54 | DEBUG    | bot.client | Submitting futures_create_order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-07-02 16:35:55 | DEBUG    | bot.client | Received order response: {'orderId': 18521803057, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'hJeGm7tlqTeEHBGD5mBYRa', 'price': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1783010157435}
+2026-07-02 16:35:55 | DEBUG    | bot.orders | Order response summary:
+Order Response Summary
+-----------------------
+  Order ID:      18521803057
+  Status:        NEW
+  Executed Qty:  0.0000
+  Avg Price:     N/A
+2026-07-02 16:35:55 | INFO     | bot.orders | Order placed successfully. orderId=18521803057 status=NEW
+2026-07-02 16:36:44 | DEBUG    | __main__ | Parsed CLI args: {'symbol': 'BTCUSDT', 'side': 'SELL', 'order_type': 'LIMIT', 'quantity': 0.01, 'price': 65000.0, 'stop_price': None}
+2026-07-02 16:36:44 | DEBUG    | bot.orders | submit_order called with raw input: symbol='BTCUSDT' side='SELL' type='LIMIT' quantity=0.01 price=65000.0 stop_price=None
+2026-07-02 16:36:44 | INFO     | bot.orders | Validated order: SELL LIMIT BTCUSDT qty=0.01
+2026-07-02 16:36:44 | DEBUG    | bot.orders | Order request summary:
+Order Request Summary
+----------------------
+  Symbol:      BTCUSDT
+  Side:        SELL
+  Type:        LIMIT
+  Quantity:    0.01
+  Price:       65000.0
+2026-07-02 16:36:44 | DEBUG    | bot.client | Initializing Binance client (testnet=True).
+2026-07-02 16:36:44 | DEBUG    | bot.client | Binance client initialized. FUTURES_URL=https://testnet.binancefuture.com/fapi
+2026-07-02 16:36:44 | INFO     | bot.orders | Submitting order to Binance Futures Testnet...
+2026-07-02 16:36:44 | DEBUG    | bot.client | Submitting futures_create_order with params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 65000.0, 'timeInForce': 'GTC'}
+2026-07-02 16:36:45 | DEBUG    | bot.client | Received order response: {'orderId': 18521926107, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'CrCZT12tLp3m12RxL8ynd2', 'price': '65000.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1783010205710}
+2026-07-02 16:36:45 | DEBUG    | bot.orders | Order response summary:
+Order Response Summary
+-----------------------
+  Order ID:      18521926107
+  Status:        NEW
+  Executed Qty:  0.0000
+  Avg Price:     N/A
+2026-07-02 16:36:45 | INFO     | bot.orders | Order placed successfully. orderId=18521926107 status=NEW
