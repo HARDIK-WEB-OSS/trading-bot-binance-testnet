@@ -1,4 +1,4 @@
-# trading_bot
+# Binance Futures Trade CLI
 
 A small, focused Python CLI for placing **MARKET**, **LIMIT**, and **STOP**
 (stop-limit) orders on **Binance Futures Testnet (USDT-M)**, built with
@@ -127,6 +127,8 @@ submission exit with code `2`.
 
 ### 3.5 Sample output
 
+Real output from a MARKET order placed against the testnet:
+
 ```
 Order Request Summary
 ----------------------
@@ -144,6 +146,10 @@ Order Response Summary
 
 SUCCESS: Order placed (status=FILLED).
 ```
+
+Note: on the testnet, a MARKET order's status can briefly show `NEW` before
+settling to `FILLED`; both are treated as success as long as Binance
+accepts the order.
 
 ---
 
@@ -180,7 +186,7 @@ is always available on disk for debugging failed orders.
   stop-**limit** order, requiring both `price` (the limit price once
   triggered) and `stopPrice` (the trigger price). This project follows that
   API semantics exactly; it does not implement `STOP_MARKET`.
-- **Symbol validation** uses a shape check (`[A-Z0-9]{5,20}USDT`) rather
+- **Symbol validation** uses a shape check (`[A-Z0-9]{2,17}USDT`) rather
   than calling Binance's `exchangeInfo` endpoint, so validation stays fast
   and works fully offline before any network call. It does not guarantee
   the symbol is actually listed -- Binance itself will reject unknown
